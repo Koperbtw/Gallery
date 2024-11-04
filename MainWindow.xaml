@@ -1,0 +1,19 @@
+﻿<Window x:Class="Gallery.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Gallery"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="450">
+    <Grid x:Name="grid" Background="#FF00796B">
+        <Label x:Name="lblGaleria" Content="Galeria" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Height="77" Width="430" FontSize="36" Foreground="White" Background="#FF004C40"/>
+        <Button x:Name="btnPrev" Content="PREV" HorizontalAlignment="Left" Margin="10,410,0,0" VerticalAlignment="Top" Height="76" Width="118" FontSize="22" Background="#FF004C40" Foreground="White" Click="btnPrev_Click"/>
+        <Button x:Name="btnNext" Content="NEXT" HorizontalAlignment="Left" Margin="317,410,0,0" VerticalAlignment="Top" Height="76" Width="123" FontSize="22" Background="#FF004C40" Foreground="White" Click="btnNext_Click"/>
+        <CheckBox x:Name="bgCheckBox" Content="?Tło niebieskie" HorizontalAlignment="Left" Margin="0,641,0,0" VerticalAlignment="Top" Checked="bgCheckBox_Checked" Height="31" Width="150" FontSize="18" FlowDirection="RightToLeft" Unchecked="bgCheckBox_Unchecked"/>
+        <Label Content="Który obraz chcesz wyświetlić?" HorizontalAlignment="Left" Margin="10,505,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <TextBox x:Name="txtBoxSet" HorizontalAlignment="Left" Margin="15,544,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txtBoxSet_TextChanged"/>
+        <Image Source="/kot1.jpg" x:Name="myImage" Margin="0,89,0,389"></Image>
+        <Label x:Name="lblAutor" Content="Autor: 00000000000" HorizontalAlignment="Center" Margin="0,722,0,0" VerticalAlignment="Top" Height="62" Width="450" FontSize="24" Foreground="Black" Background="#FF004C40"/>
+    </Grid>
+</Window>

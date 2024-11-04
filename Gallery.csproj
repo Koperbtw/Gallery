@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="kot1.jpg" />
+    <None Remove="kot2.jpg" />
+    <None Remove="kot3.jpg" />
+    <None Remove="kot4.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="kot1.jpg" />
+    <Resource Include="kot2.jpg" />
+    <Resource Include="kot3.jpg" />
+    <Resource Include="kot4.jpg" />
+  </ItemGroup>
+
+</Project>
